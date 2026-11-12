@@ -1,0 +1,5 @@
+Name : The Head Fairy's Chamber
+
+Three guards seal the head fairy's door, and your browser is not what any of them is looking for. Make them believe you, and bring back the secret behind the door.
+
+Flag format: SheHacks{...}

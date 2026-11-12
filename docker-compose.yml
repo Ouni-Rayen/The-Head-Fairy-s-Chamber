@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      # Change the host port if it is taken:  HOST_PORT=8090 docker compose up -d
+      - "${HOST_PORT:-8005}:5000"
+    environment:
+      # Passed through from your shell. The default in app.py is used if unset.
+      - FLAG
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    read_only: true
+    tmpfs:
+      - /tmp
+    mem_limit: 256m
+    pids_limit: 100

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHE HACKS | The Head Fairy's Chamber</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head><body>
+<header><a class="script brand" href="/">SHE HACKS</a><span class="tag">ALFEA &middot; EAST TOWER</span></header>
+<main>
+  <section class="card" id="door" aria-live="polite">
+    <span class="tag">THE HEAD FAIRY'S CHAMBER</span>
+    <h1 class="script">Three locks.</h1>
+    <p>The door is sealed by three guards, and each one wants something different. Knock and see who answers.</p>
+    <ol class="locks" id="locks" aria-label="Lock status">
+      <li class="lock"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Lock 1</span></li>
+      <li class="lock"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Lock 2</span></li>
+      <li class="lock"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span>Lock 3</span></li>
+    </ol>
+    <div class="actions">
+      <button class="btn" type="button" id="knock">Knock on the door</button>
+      <p class="err" id="msg" role="alert"></p>
+    </div>
+  </section>
+  <section class="card good" id="win" hidden>
+    <span class="tag">DOOR OPEN</span>
+    <h1 class="script">Welcome, head fairy</h1>
+    <p>Here is the secret the stars were keeping.</p>
+    <div class="flag" id="flag"></div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body></html>
